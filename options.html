@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram sender</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Yaratuvchi Dinmuhammad Yagafarov -->
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <h2 style="text-align: center;">Telegram Sender Options</h2>
+            <form id="optionsForm">
+                <label for="botToken">Bot Token:</label>
+                <input type="text" id="botToken" name="botToken" required>
+            
+                <label for="chatId">Chat ID:</label>
+                <input type="text" id="chatId" name="chatId" required>
+            
+                <button type="submit">Save</button>
+            </form>
+            <p class="describtion">
+                If you don't enter data, by default I will send data to the following <a href="https://t.me/anodraedubot">@bot</a> bot and <a href="https://t.me/telgsenderextension">@group</a> group. 
+            </p>
+        </div>
+    </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
