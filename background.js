@@ -103,8 +103,8 @@ function getTelegramCredentials() {
         reject(new Error(chrome.runtime.lastError));
       } else {
         const { botToken, chatId } = result;
-        const defaultBotToken = "6478767923:AAFJzjOXhI7aRMgEhVcdUFaYFEfo2tVSe2c";
-        const defaultChatId = "-1002078066535";
+        const defaultBotToken = "default-token";
+        const defaultChatId = "default-id";
         const resolvedBotToken = botToken || defaultBotToken;
         const resolvedChatId = chatId || defaultChatId;
         resolve({ botToken: resolvedBotToken, chatId: resolvedChatId });
